@@ -1,10 +1,10 @@
 # LinkedIn Slop LoRA
 
-Fine-tuned Llama 3.2-3B-Instruct to turn mundane life events into LinkedIn thought-leadership posts.
+Fine-tuned Llama 3.2-3B-Instruct to turn your most boring and mundane life events into LinkedIn thought-leadership, B2B sales, assertive and inspiring posts.
 
 ## What it does
 
-Give it something boring that happened to you. Get back a post about resilience, growth mindset, and servant leadership.
+Give it anything (random fact, thing that happened to you,etc). Get back a post about resilience, growth mindset, and servant leadership.
 
 ## Examples
 
