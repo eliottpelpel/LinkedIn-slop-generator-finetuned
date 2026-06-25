@@ -1,5 +1,4 @@
 import os
-import sys
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
@@ -51,12 +50,12 @@ def generate(model, tokenizer, device, prompt, max_new_tokens=200):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print('Usage: python generate.py "something mundane that happened to you"')
-        sys.exit(1)
-
-    prompt = " ".join(sys.argv[1:])
     model, tokenizer, device = load_model()
+
+    prompt = input("\nEnter your prompt: ").strip()
+    if not prompt:
+        print("No prompt provided.")
+        return
 
     print(f'\nPrompt: "{prompt}"\n')
 
